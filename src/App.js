@@ -1,14 +1,13 @@
 import React from 'react';
-import Fcomponent from './components/Fcomponent';
+import FormComponent from './components/FormComponent';
 import Ccomponent from './components/Ccomponent';
 import { AFcomponent } from './components/AFcomponent';
 
 function App() {
   return (
     <div className="App">
-      {/* <Fcomponent name={'Sergey'} /> */}
       <Ccomponent name={'Sergey'} />
-      {/* <AFcomponent name={'Sergey'} /> */}
+      <FormComponent />
     </div>
   );
 }

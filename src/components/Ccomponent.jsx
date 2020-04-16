@@ -45,7 +45,7 @@ export default class Ccomponent extends Component {
 
     render() {
         return (
-            <div>
+            <div className='block'>
                 {this.state.isVisible
                     ? <div><h1>State = {this.state.name}</h1></div>
                     : <h1>...</h1>}
