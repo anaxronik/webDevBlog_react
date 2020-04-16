@@ -1,7 +1,6 @@
 import React from 'react';
 import FormComponent from './components/FormComponent';
 import Ccomponent from './components/Ccomponent';
-import { AFcomponent } from './components/AFcomponent';
 
 function App() {
   return (

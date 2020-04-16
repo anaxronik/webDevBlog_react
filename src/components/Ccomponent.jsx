@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './Ccomponent.css'
+import Button from '@material-ui/core/Button';
 
 export default class Ccomponent extends Component {
     constructor(props) {
@@ -47,17 +49,16 @@ export default class Ccomponent extends Component {
         return (
             <div className='block'>
                 {this.state.isVisible
-                    ? <div><h1>State = {this.state.name}</h1></div>
+                    ? <h1 className='hello'>State = {this.state.name}</h1>
                     : <h1>...</h1>}
                 <button onClick={this.buttonClick} >Add 'a'</button>
                 <button onClick={this.changeVisible} >Set visible</button>
 
                 <div>
                     <h2>count = {this.state.count}</h2>
-                    <button onClick={this.decrement} >-1</button>
-                    <button onClick={this.reset} >reset</button>
-                    <button onClick={this.increment} >+1</button>
-
+                    <Button variant="contained" color="primary" onClick={this.decrement} >-1</Button>
+                    <Button variant="contained" onClick={this.reset} >reset</Button>
+                    <Button variant="contained" color="secondary" onClick={this.increment} >+1</Button>
                 </div>
             </div>
         )
