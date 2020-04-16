@@ -6,9 +6,9 @@ import { AFcomponent } from './components/AFcomponent';
 function App() {
   return (
     <div className="App">
-      <Fcomponent name={'Sergey'} />
+      {/* <Fcomponent name={'Sergey'} /> */}
       <Ccomponent name={'Sergey'} />
-      <AFcomponent name={'Sergey'} />
+      {/* <AFcomponent name={'Sergey'} /> */}
     </div>
   );
 }
